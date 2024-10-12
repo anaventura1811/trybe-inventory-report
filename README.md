@@ -1,6 +1,6 @@
 # Boas vindas ao repositório do projeto Inventory Reports!
 
-O projeto Inventory Reports (Relatório de Estoque) foi desenvolvido em Python, com o objetivo de fixar conceitos sobre paradigmas de programação, com em Orientação a Objetos, com a criação de classes e instâncias, além de praticar a leitura e escrita de arquivos utilizando libs e recursos da linguagem.
+O projeto Inventory Reports (Relatório de Estoque) foi desenvolvido no módulo de Ciência da Computação do curso de Desenvolvimento Web da Trybe. O projeto é totalmente desenvolvido em Python e tem como objetivo fixar conceitos sobre paradigmas de programação, com foco em Orientação a Objetos, com a criação de classes e instâncias.
 
 ---
 
