@@ -1,12 +1,6 @@
-### Termos de acordos
+# Boas vindas ao repositório do projeto Inventory Reports!
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
-# Boas vindas ao repositório do projeto de Relatório de Estoque!
-
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+O projeto Inventory Reports (Relatório de Estoque) foi desenvolvido em Python, com o objetivo de fixar conceitos sobre paradigmas de programação, com em Orientação a Objetos, com a criação de classes e instâncias, além de praticar a leitura e escrita de arquivos utilizando libs e recursos da linguagem.
 
 ---
 
@@ -14,11 +8,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 - [Habilidades](#habilidades)
 - [Data de entrega](#data-de-entrega)
-- [Entregáveis](#entregáveis)
-- [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
 - [Desenvolvimento e testes](#desenvolvimento-e-testes)
 - [Dados](#dados)
-- [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
 
 Lista de requisitos:
 - [Requisitos obrigatórios](#requisitos-obrigatórios)
@@ -32,43 +23,29 @@ Lista de requisitos:
 - [Requisitos bônus](#requisitos-bônus)
   - [8 - Preencha a função main no módulo `inventory_report/main.py` que, ao receber pela linha de comando o caminho de um arquivo e o tipo de relatório, devolve o relatório correto](#8---preencha-a-função-main-no-módulo-inventory_reportmainpy-que-ao-receber-pela-linha-de-comando-o-caminho-de-um-arquivo-e-o-tipo-de-relatório-devolve-o-relatório-correto)
 
-- [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento)
-  - [Revisando um Pull Request](#revisando-um-pull-request)
-- [Avisos finais](#avisos-finais)
-
 ---
 
 ## Habilidades
 
-Nesse projeto, você será capaz de:
+Nesse projeto, foram trabalhadas as seguintes habilidades e competências:
 
-- Você vai aprender sobre paradigmas de programação
-- Conceitos de OO na prática, criando classes e instâncias
-- Leitura e escria de arquivos
+- Fixação do conceito de paradigmas de programação
+- Aplicação de conceitos de Orientação a Ojetos na prática, com a criação de classes e instâncias
+- Leitura e escrita de arquivos utilizando libs e recursos da linguagem
 
 ---
 
 ## Data de entrega
 
   - Projeto obrigatório;
-  - Serão `2` dias de projeto.
+  - Foram `2` dias de projeto.
   - Data de entrega para avaliação final do projeto: `11/01/2022 - 14:00h`.
-
+    
 ---
 
-## Entregáveis
+## O que foi desenvolvido
 
-Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter, para aprovação em todos os requisitos, os arquivos que se encontram neste diretório. Os códigos serão desenvolvidos nos arquivos presentes no diretório `inventory_report`: `main.py`, `reports/simple_report.py`, `reports/complete_report.py`, `importer/importer.py`, `importer/json_importer.py`, `importer/xml_importer.py`, `importer/csv_importer.py`, `inventory/inventory.py`, `inventory/invetory_iterator.py`.
-
-### ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
-
-Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a gente no Slack!.
-
----
-
-## O que deverá ser desenvolvido
-
-No projeto passado você implementou algumas funções que faziam leitura e escrita de arquivos `JSON` e `CSV`, correto? Neste projeto nós vamos fazer algo parecido, mas utilizando a Programação Orientada a Objetos! Você implementará um gerador de relatórios que recebe como entrada arquivos com dados de um estoque e gera, como saída, um relatório acerca destes dados.
+***No projeto passado você implementou algumas funções que faziam leitura e escrita de arquivos `JSON` e `CSV`, correto?** Neste utilizamos Programação Orientada a Objetos, implementando um gerador de relatórios que recebe como entrada arquivos com dados de um estoque e gera, como saída, um relatório acerca destes dados.
 
 Esses dados de estoque poderão ser obtidos de diversas fontes:
 
@@ -78,7 +55,7 @@ Esses dados de estoque poderão ser obtidos de diversas fontes:
 
 - Através da importação de um arquivo `XML`;
 
-Além disso, o relatório final deverá poder ser gerado em duas versões: simples e completa.
+Além disso, o relatório final pode ser gerado em duas versões: simples e completa.
 
 ### Como o projeto deve ser executável
 
@@ -92,7 +69,7 @@ Após implementar o requisito bônus, seu programa deverá ser executável **via
 
 ## Desenvolvimento e testes
 
-Este repositório já contém um _template_ com a estrutura de diretórios e arquivos, tanto de código quanto de teste criados. Veja abaixo:
+Veja abaixo o _template_ com a estrutura de diretórios e arquivos, a partir do qual as classes foram implementadas:
 
 ```
 .
@@ -131,8 +108,6 @@ Este repositório já contém um _template_ com a estrutura de diretórios e arq
     └── test_xml_importer.py
 ```
 
-Apesar do projeto já possuir uma estrutura base, você quem deve implementar as classes. Novos arquivos podem ser criados conforme a necessidade.
-
 Para executar os testes, lembre-se de primeiro **criar e ativar o ambiente virtual**, além de também instalar as dependências do projeto. Isso pode ser feito através dos comandos:
 
 ```bash
@@ -148,8 +123,6 @@ O arquivo `dev-requirements.txt` contém todos as dependências que serão utili
 ```bash
 $ python3 -m pytest
 ```
-
-Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse artigo: https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1
 
 Para verificar se você está seguindo o guia de estilo do Python corretamente, você pode executá-lo com o seguinte comando:
 
@@ -210,79 +183,6 @@ Os arquivos **XML** seguem o seguinte modelo:
   </record>
 </dataset>
 ```
-
----
-
-
-## Instruções para entregar seu projeto:
-
-### ⚠️ Se você estiver fazendo esse projeto em duplas ⚠️
-
-É **essencial** que cada integrante da dupla tenha pelo menos 1 Push com o código completo do projeto. A nota de cada pessoa será computada individualmente, então o Push de uma pessoa não garante a nota da outra.
-
-Exemplo:
-- Estudante `Rafa` implementa 50% dos requisitos obrigatórios
-- Em seguida `Gabs`, sua dupla, complementa com os 50% restantes (atingindo 100% dos obrigatórios)
-  - Neste momento **SOMENTE** `Gabs` obteve aprovação.
-- `Rafa` faz um Push em sua branch, com o código completo (atingindo 100% dos obrigatórios) 
-  - Neste momento `Rafa` também obtém a aprovação
-
-Para mais detalhes de como deve ocorrer a dinâmica, [consulte este material](TODO:link/da/apresentação/feita/para/a/turma/na/explicação/do/projeto)
-
-### ANTES DE COMEÇAR A DESENVOLVER:
-
-1. Clone o repositório
-
-- `git clone git@github.com:tryber/sd-010-a-inventory-report.git`.
-- Entre na pasta do repositório que você acabou de clonar:
-  - `sd-010-a-inventory-report`
-
-2. Crie o ambiente virtual para o projeto
-
-- `python3 -m venv .venv && source .venv/bin/activate`
-
-Nota: após terminar o trabalho, para desativar o ambiente virtual digite `deactivate`
-
-3. Instale as dependências
-
-- `python3 -m pip install -r dev-requirements.txt`
-
-4. Crie uma branch a partir da branch `master`
-
-- Verifique que você está na branch `master`
-  - Exemplo: `git branch`
-- Se não estiver, mude para a branch `master`
-  - Exemplo: `git checkout master`
-- Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-  - Você deve criar uma branch no seguinte formato: `nome-github-nome-do-projeto`
-  - Exemplo: `git checkout -b exemplo-inventory-report`
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-- Verifique que as mudanças ainda não estão no _stage_
-  - Exemplo: `git status` (deve aparecer listada a pasta _exemplo_ em vermelho)
-- Adicione o novo arquivo ao _stage_ do Git
-  - Exemplo:
-    - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-    - `git status` (deve aparecer listado o arquivo _exemplo/README.md_ em verde)
-- Faça o `commit` inicial
-  - Exemplo:
-    - `git commit -m 'iniciando o projeto inventory-report'` (fazendo o primeiro commit)
-    - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-6. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-- Usando o exemplo anterior: `git push -u origin exemplo-project-name`
-
-7. Crie um novo `Pull Request` _(PR)_
-
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-010-a-inventory-report/pulls)
-- Clique no botão verde _"New pull request"_
-- Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-- Clique no botão verde _"Create pull request"_
-- Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-- **Não se preocupe em preencher mais nada por enquanto!**
-- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-010-a-inventory-report/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
@@ -522,33 +422,3 @@ $ inventory_report <caminho_do_arquivo_input> <tipo_de_relatório>
 - 8.7 - Será validado se houverem argumentos faltantes será retornando um erro
 
 ---
-
-## Depois de terminar o desenvolvimento
-
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-010-a`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
----
-
-## Revisando um pull request
-
-Use o conteúdo sobre [Code Review](https://app.betrybe.com/course/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
----
-
-# Avisos finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/39qMu3s)
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
